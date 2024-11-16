@@ -5,6 +5,20 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title:  const Text("Notes",
+        style: TextStyle(
+          fontSize: 30,
+          fontWeight: FontWeight.bold,
+        ),
+        ),
+        actions: [
+          IconButton(onPressed: (){},
+          icon: const Icon(Icons.search,size: 45,),)
+        ],
+
+      ),
+    );
   }
 }
